@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "openai-hackathon-workshop"
+version = "0.0.0"
+description = ""
+authors = ["Rodrigo Basoalto <basoalto@fintual.com>"]
+license = "BSD-3-clause"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+jupyter = "^1.0.0"
+langchain = "^0.2.11"
+langchain-openai = "^0.1.19"
+gradio = "^4.39.0"
+pyright = "^1.1.373"
+jupyterlab-lsp = "^5.1.0"
+openai = "^1.37.1"
+langsmith = "^0.1.94"
+langgraph = "^0.1.16"
+wikipedia = "^1.4.0"
+langchain-community = "^0.2.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.plugins.dotenv]
+ignore = "false"
+location = ".env"
